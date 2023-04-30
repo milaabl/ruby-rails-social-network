@@ -16,8 +16,8 @@
     <a href="/">
            <%= image_tag "logo.png", class:"h-20" %>
         </a>
-        <%= button_to 'Sign up', '/auth/auth0', method: :post, data: { turbo: false } %>
-        <%= button_to 'Sign in', '/auth/auth0', method: :post, data: { turbo: false } %>
+        <%= button_to 'Logout', '/auth/logout', method: :get, data: { turbo: false } %>
+        <% @user %>
         </nav>
     <%= yield %>
   </body>
